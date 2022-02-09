@@ -11,7 +11,7 @@ cap = cv2.VideoCapture(0)
 
 name = input("Enter the name of the Asana : ")
 
-holistic = mp.solutions.pose
+holistic = mp.solutions.holistic
 holis = holistic.Pose()
 drawing = mp.solutions.drawing_utils
 

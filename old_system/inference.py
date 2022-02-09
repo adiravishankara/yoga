@@ -1,4 +1,4 @@
-import cv2 
+ import cv2
 import numpy as np 
 import mediapipe as mp 
 from keras.models import load_model 
@@ -54,8 +54,6 @@ while True:
 
 		
 	drawing.draw_landmarks(frm, res.pose_landmarks, holistic.POSE_CONNECTIONS,
-							connection_drawing_spec=drawing.DrawingSpec(color=(255,255,255), thickness=6 ),
-							 landmark_drawing_spec=drawing.DrawingSpec(color=(0,0,255), circle_radius=3, thickness=3))
 
 
 	window[420:900, 170:810, :] = frm
